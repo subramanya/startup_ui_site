@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.mywebsite.project</groupId>
+        <artifactId>mywebsite-parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>mywebsite_ui</artifactId>
+    <packaging>content-package</packaging>
+
+    <name>${project.groupId} - ${project.artifactId}</name>
+
+    <description>
+        sample UI project
+    </description>
+    <dependencies>
+
+        <dependency>
+            <groupId>com.day.cq.wcm</groupId>
+            <artifactId>cq-wcm-core</artifactId>
+            <version>5.6.14</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.day.cq.wcm</groupId>
+            <artifactId>cq-wcm-api</artifactId>
+            <version>5.6.6</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.day.cq.wcm</groupId>
+            <artifactId>cq-wcm-commons</artifactId>
+            <version>5.6.4</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.day.cq.wcm</groupId>
+            <artifactId>cq-wcm-foundation</artifactId>
+            <version>5.6.4</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.day.cq.wcm</groupId>
+            <artifactId>cq-wcm-taglib</artifactId>
+            <version>5.6.4</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.day.cq</groupId>
+            <artifactId>cq-commons</artifactId>
+            <version>5.6.4</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.granite</groupId>
+            <artifactId>com.adobe.granite.ui.commons</artifactId>
+            <version>5.5.76</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.day.commons</groupId>
+            <artifactId>day-commons-text</artifactId>
+            <version>1.1.8</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.day.cq</groupId>
+            <artifactId>cq-tagging</artifactId>
+            <version>5.6.4</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.day.commons</groupId>
+            <artifactId>day-commons-io</artifactId>
+            <version>1.1.8</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- org.apache.taglibs.standard -->
+        <dependency>
+            <groupId>com.day.commons</groupId>
+            <artifactId>day-commons-jstl</artifactId>
+            <version>1.1.4</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- javax.servlet.jsp.* -->
+        <dependency>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.scripting.jsp</artifactId>
+            <version>2.0.28</version>
+            <scope>provided</scope>
+        </dependency>
+
+
+        <!-- javax.servlet -->
+        <!-- <dependency>
+            <groupId>com.day.cqse</groupId>
+            <artifactId>cqse-httpservice</artifactId>
+            <version>4.1.52</version>
+            <scope>provided</scope>
+        </dependency> -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!--
+        com.day.util
+        com.day.text
+         -->
+        <dependency>
+            <groupId>com.day.commons</groupId>
+            <artifactId>day-commons-misc</artifactId>
+            <version>1.1.2</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- org.apache.sling.jcr.api -->
+        <dependency>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.jcr.api</artifactId>
+            <version>2.1.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- org.apache.sling.api -->
+        <dependency>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.api</artifactId>
+            <version>2.4.3-R1488084</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!--
+        org.apache.sling.scripting.jsp.jasper.runtime
+        org.apache.sling.scripting.jsp.util
+        javax.servlet.jsp.el
+        javax.el
+        javax.servlet.jsp
+        javax.servlet.jsp.el
+        javax.servlet.jsp.tagext
+         -->
+        <dependency>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.scripting.jsp</artifactId>
+            <version>2.0.28</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!--
+        org.apache.sling.scripting.jsp.taglib
+         -->
+        <dependency>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.scripting.jsp.taglib</artifactId>
+            <version>2.1.8</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- org.apache.sling.adapter -->
+        <dependency>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.adapter</artifactId>
+            <version>2.1.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- org.apache.sling.jcr.resource -->
+        <dependency>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.jcr.resource</artifactId>
+            <version>2.2.9-R1483758</version>
+            <scope>provided</scope>
+        </dependency>
+
+
+        <!--  SECURITY RELATED APIs -->
+        <dependency>
+            <groupId>com.day.cq</groupId>
+            <artifactId>cq-security-api</artifactId>
+            <version>5.6.2</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- NEEDED FOR SEARCH RELATED API CALLS-->
+        <dependency>
+            <groupId>com.day.cq</groupId>
+            <artifactId>cq-search</artifactId>
+            <version>5.6.4</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.jackrabbit</groupId>
+            <artifactId>jackrabbit-jcr-commons</artifactId>
+            <version>2.6.2</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!--  DAM -->
+        <dependency>
+            <groupId>com.day.cq.dam</groupId>
+            <artifactId>cq-dam-core</artifactId>
+            <version>5.6.14</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.day.cq.dam</groupId>
+            <artifactId>cq-dam-api</artifactId>
+            <version>5.6.6</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.day.cq.dam</groupId>
+            <artifactId>cq-dam-commons</artifactId>
+            <version>5.6.8</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!--
+                bundle: com.adobe.granite.i18n-5.5.10.jar
+                exported packages:
+                    com.adobe.granite.i18n
+                    com.day.cq.i18n
+            -->
+        <dependency>
+            <groupId>com.adobe.granite</groupId>
+            <artifactId>com.adobe.granite.i18n</artifactId>
+            <version>5.5.10</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.adobe.granite</groupId>
+            <artifactId>com.adobe.granite.xssprotection</artifactId>
+            <version>5.5.24</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.day.cq</groupId>
+            <artifactId>cq-personalization</artifactId>
+            <version>5.6.8</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- com.day.cq.wcm.webservicesupport -->
+        <dependency>
+            <groupId>com.day.cq.wcm</groupId>
+            <artifactId>cq-wcm-webservice-support</artifactId>
+            <version>5.6.4</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.6.4</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- javax.jcr -->
+        <dependency>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.jcr.jcr-wrapper</artifactId>
+            <version>2.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.squeakysand.jcr</groupId>
+            <artifactId>squeakysand-jcr-taglib</artifactId>
+            <version>0.3.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.squeakysand.jsp</groupId>
+            <artifactId>squeakysand-jsp</artifactId>
+            <version>0.4.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.squeakysand.osgi</groupId>
+            <artifactId>squeakysand-osgi</artifactId>
+            <version>0.4.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.squeakysand.sling</groupId>
+            <artifactId>squeakysand-sling-taglib</artifactId>
+            <scope>provided</scope>
+            <version>0.3.0</version>
+        </dependency>
+
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy-content-resources</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}/vault-work</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>${basedir}/src/main/content</directory>
+                                    <filtering>true</filtering>
+                                    <excludes>
+                                        <exclude>**/.svn</exclude>
+                                        <exclude>**/.vlt</exclude>
+                                        <exclude>**/.vltignore</exclude>
+                                        <exclude>**/.DS_Store</exclude>
+                                    </excludes>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>com.day.jcr.vault</groupId>
+                <artifactId>maven-vault-plugin</artifactId>
+                <extensions>true</extensions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>auto-deploy</id>
+            <!--
+                when activated, this profile will deploy and install the built CQ package to the target server.
+            -->
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.day.jcr.vault</groupId>
+                        <artifactId>maven-vault-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>install-package</id>
+                                <goals>
+                                    <goal>install</goal>
+                                </goals>
+                                <configuration>
+                                    <packageFile>${project.build.directory}/${project.build.finalName}.zip</packageFile>
+                                    <targetURL>${cq.scheme}://${cq.host}:${cq.port}/crx/packmgr/service.jsp</targetURL>
+                                    <userId>${cq.user}</userId>
+                                    <password>${cq.password}</password>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>        
+        <profile>
+            <id>auto-deploy-unix</id>
+            <!--
+                when activated, this profile will deploy and install the built CQ package to the target server.
+            -->
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.day.jcr.vault</groupId>
+                        <artifactId>maven-vault-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>install-package</id>
+                                <goals>
+                                    <goal>install</goal>
+                                </goals>
+                                <configuration>
+                                    <packageFile>${project.build.directory}/${project.build.finalName}.zip</packageFile>
+                                    <targetURL>${cq.scheme}://${cq.host}:${cq.port}/crx/packmgr/service.jsp</targetURL>
+                                    <userId>${cq.user}</userId>
+                                    <password>${cq.password}</password>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+		    <plugin>
+			     <groupId>org.codehaus.mojo</groupId>
+			     <artifactId>exec-maven-plugin</artifactId>
+			     <version>1.3.2</version>
+			     <executions>
+				<execution>
+				    <id>script-chmod</id>
+				    <phase>install</phase>
+				    <goals>
+					<goal>exec</goal>
+				    </goals>
+				    <configuration>
+					<executable>chmod</executable>
+					<arguments>
+					    <argument>+x</argument>
+					    <argument>${basedir}/../syncToDevPublish.sh</argument>
+					</arguments>
+				    </configuration>
+				</execution>				     
+				<execution>
+				    <id>replicateToDev</id>
+				    <phase>install</phase>
+				    <goals>
+				       <goal>exec</goal>
+				    </goals>
+				    <configuration>
+					  <executable>/bin/bash</executable>
+					  <arguments>		
+					     <argument>${basedir}/../syncToDevPublish.sh</argument>
+					    <argument>${cq.user}</argument>
+					    <argument>${cq.password}</argument>
+					    <argument>${project.version}</argument>
+					    <argument>${cq.scheme}</argument>
+					    <argument>${cq.host}</argument>
+					    <argument>${cq.port}</argument>
+					    <argument>${project.build.finalName}.zip</argument>				    
+					  </arguments>						
+				    </configuration>
+				</execution>
+			    </executions>
+			</plugin>                    
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+</project>
