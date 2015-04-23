@@ -1,1 +1,1 @@
-This is a quick startup project for getting first hands experience in AEM 5.6.1
+This is a quick startup project for getting first hand experience in AEM 5.6.1
